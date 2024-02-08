@@ -5,7 +5,7 @@ This repository contains all the [Frontend Mentor](https://www.frontendmentor.io
 
 ## Challenges
 
-1. [Challenge Name 1](link-to-live-site-1)
+1. [Qr code challenge](https://win5ton0c.github.io/frontendmentor/Frontend/g1-code-challenge/) 
 
 
 ## Technologies Used
