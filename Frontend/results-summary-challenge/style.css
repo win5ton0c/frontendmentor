@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'MyCustomFont';
     src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 500 800;
     font-style: normal;
 }
 
-root{
+:root{
 
     /*Primary*/
 
@@ -21,7 +21,12 @@ root{
     --violet_blue__circle: hsla(256, 72%, 46%, 1);      
     --persian_blue__circle: hsla(241, 72%, 46%, 0);
 
-    
+    /* Nuetral*/
+
+    --white: hsl(0, 0%, 100%);
+    --pale_blue: hsl(221, 100%, 96%);
+    --light_lavender: hsl(241, 100%, 89%);
+    --dark_gray_blue: hsl(224, 30%, 27%);
 
 }
 
@@ -31,3 +36,141 @@ root{
     padding: 0;
 }
 
+
+body{
+    font-family: 'MyCustomFont', sans-serif;
+    background-color: var(--pale_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+
+}
+
+.main-container {
+    max-width: 42.1%;
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.results-card, .summary-card {
+    flex: 1;
+    margin: 0;
+    border: solid 1px #d0d0d0; 
+    height: 470px;
+    padding: 25px;
+    border-radius: 30px;
+    
+    
+}
+
+.results-card{
+    background-image: linear-gradient(180deg,var(--light_slate_blue__background) 0%, var(--light_royal_blue__background) 100%);
+}
+
+.results-card-title{
+    text-align: center;
+    font-weight: 500;
+    color: var(--light_lavender);
+    margin: 10px;
+    padding: 10px;
+    ;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--violet_blue__circle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.results-score{
+    font-size: 66px;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    margin-left: 55px;
+
+}
+
+
+
+h2{
+    font-size:1.2rem ;
+    text-align: center;
+    padding: 10px;
+    color: var(--white);
+}
+
+.results-bottom-text{
+
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark_gray_blue);
+
+}
+
+.summary-card{
+    background-color: var(--light_lavender);
+}
+
+summary-card-title{
+   font-size:1.5rem ;
+   font-weight: 800;
+}
+
+
+
+dt, dd {
+    display: inline;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  dd {
+    margin-left: 10px;
+    
+  }
+  
+  dd::after {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+  }
+  
+  .item dt, .item dd {
+    margin: 0;
+  }
+  
+  .light-red {
+    background-color: hsla(0, 100%, 67%, 0.2);
+  }
+  
+  .light-orange {
+    background-color: hsla(39, 100%, 56%, 0.2);
+  }
+  
+  .light-yellow {
+    background-color: hsla(166, 100%, 37%, 0.2);
+  }
+  
+  .light-green {
+    background-color: hsla(234, 85%, 45%, 0.2);
+  }
+  
