@@ -95,3 +95,39 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  Your Result
+  76
+  of 100
+
+  Great
+  You scored higher than 65% of the people who have taken these tests.
+  
+  Summary
+
+  Reaction
+  80 / 100
+
+  Memory
+  92 / 100
+
+  Verbal
+  61 / 100
+
+  Visual
+  72 / 100
+
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
