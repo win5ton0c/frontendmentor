@@ -9,40 +9,54 @@
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <div class="main-container">
-    <div class="results-card">
-      <h3 class="results-card-title">Your Result</h3>
-      <p class="results-score circle">76 of 100</p>
-      <h2>Great</h2>
-      <p class="results-bottom-text">
-        You scored higher than 65% of the people who have taken these tests.
-      </p>
-    </div>
-    <div class="summary-card">
-    <h3 class ="summary-card-title">Summary</h3>
-    <dl>
-      <div class="item light-red">
-        <dt>Reaction</dt>
-        <dd>80/90</dd>
-      </div>
-      <div class="item light-orange">
-        <dt>Memory</dt>
-        <dd>92/100</dd>
-      </div>
-      <div class="item light-yellow">
-        <dt>Verbal</dt>
-        <dd>61/100</dd>
-      </div>
-      <div class="item light-green">
-        <dt>Visual</dt>
-        <dd>72/100</dd>
-      </div>
-    </dl>
+ <div class="container">
+  <div class="result-card">
+    <h2>Your Result</h2>
+    <div class="circle">
+      <div class="score">76
+      <span>of 100</span>
 
-  <button class="btn">Continue</button>
-</div>
+    </div>
+    </div>
+    
+    <h2 class="bottom-text">Great</h2>
+    <p>You scored higher than 65% of the people who have taken these tests</p>
   </div>
 
+  <div class="summary-card">
+    <h2>Summary</h2>
+    <div class="summary-card-box  red-box">
+      <img src="./assets/images/icon-reaction.svg" alt="reaction svg">
+      <p>Reaction</p>
+      <div class="score">80</div>
+      <span>/ 100</span>
+    </div>
   
+    <div class="summary-card-box yellow-box">
+      <img src="./assets/images//icon-memory.svg" alt="reaction svg">
+      <p> Memory</p>
+      <div class="score">92</div>
+      <span>/ 100</span>
+    </div>
+
+    <div class="summary-card-box green-box">
+      <img src="./assets/images/icon-verbal.svg" alt="reaction svg">
+      <p>Verbal</p>
+      <div class="score">61</div>
+      <span>/ 100</span>
+    </div>
+
+    <div class="summary-card-box blue-box">
+      <img src="./assets/images/icon-visual.svg" alt="reaction svg">
+      <p>Visual</p>
+      <div class="score">72</div>
+      <span>/ 100</span>
+    </div>
+    <button class="btn">Continue</button>
+  </div>
+
+ </div>
+
+
 </body>
 </html>
