@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+
 
 ![Desktop preview](image.png)
 ![active state](image-1.png)
