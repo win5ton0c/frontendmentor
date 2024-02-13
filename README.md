@@ -9,6 +9,8 @@ This repository contains all the [Frontend Mentor](https://www.frontendmentor.io
 
 2.[Result Summary challenge](https://github.com/win5ton0c/frontendmentor/tree/main/Frontend/results-summary-challenge)
 
+3.[Result Summary challenge](https://github.com/win5ton0c/frontendmentor/tree/main/Frontend/3-column-preview-card-challenge)
+
 
 
 ## Technologies Used
