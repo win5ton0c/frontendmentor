@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    /*primary colors*/
+    --Bight_orange: hsl(31, 77%, 52%);   
+    --Dark_cyan: hsl(184, 100%, 22%);     
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    /*Nuetral*/
+    --Transparent-white:hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray:hsl(0, 0%, 95%);
+    --Fsize: 0.9375rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+main{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.card{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    width:calc(100%/3);
+    max-width: 307px;
+    height: 501px;
+    border-radius: 10px;
+    background: var(--Bight_orange);
+    text-align: left;
+    padding: 45px;
+}
+
+.card h1{
+    font: 700 35px "Big Shoulders Display", sans-serif;
+    color: var(--Very-light-gray);
+    margin:25px 0;
+    text-transform: uppercase;
+}
+
+.card p{
+    font-size: var(--Fsize);
+    font-weight:400 ;
+    color: var(--Transparent-white);
+    margin-bottom:80px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.card button{
+    text-align: center;
+    cursor: pointer;
+    color:var(--Bight_orange);
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 13px 28px;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.card button:hover{
+    background:inherit;
+    border: solid var(--Very-light-gray) 2px;
+    color: var(--Very-light-gray);
+}
+
+/*Sedan card*/
+.card:nth-child(1){
+    border-radius: 10px 0 0 10px;
+}
+
+/* Suv card*/
+.card:nth-child(2){
+    background: var(--Dark_cyan);
+    border-radius:0;
+    color: var(--Dark_cyan);
+}
+
+/*Luxury card*/
+.card:nth-child(3){
+    background: var(--Very_dark_cyan);
+    border-radius: 0 10px 10px 0;
+    color: var(--Very_dark_cyan);
+}
+
+@media (max-width: 835px) {
+    main {
+        width: 100%; 
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .card:nth-child(1){
+        border-radius: 10px 10px 0 0;
+    }
+    .card:nth-child(2){
+        border-radius:0;
+    }
+    .card:nth-child(3){
+        border-radius: 0 0 10px 10px;
+    }
+}
