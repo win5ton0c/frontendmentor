@@ -5,7 +5,7 @@ This repository contains all the [Frontend Mentor](https://www.frontendmentor.io
 
 ## Challenges
 
-1. [Qr code challenge](https://github.com/win5ton0c/frontendmentor/tree/main/Frontend/qr-code-challenge) 
+1.[Qr code challenge](https://github.com/win5ton0c/frontendmentor/tree/main/Frontend/qr-code-challenge) 
 
 2.[Result Summary challenge](https://github.com/win5ton0c/frontendmentor/tree/main/Frontend/results-summary-challenge)
 
