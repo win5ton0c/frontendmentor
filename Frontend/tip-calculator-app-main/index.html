@@ -2,38 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Tip calculator app</title>
-  
 </head>
+
 <body>
 
-  Bill
+  <header>
+    <div class="logo-container">
+      <img class="logo" src="./images/logo.svg" alt="spiltter logo">
+    </div>
+  </header>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <main>
+    <div class="container">
+      <div class="bill-card card">
+          <label for="bill">Bill</label>
+          <h6 class="error-message" id="bill-error-message">Can't be negative or zero</h6>
+          <input type="number" placeholder="0" min="0" id="bill">
+          <img src="./images/icon-dollar.svg" alt="Dollar Icon">
+          
 
-  Number of People
+        <div class="tip-selection">
+          <h2>Select Tip %</h2>
+          <div class="btn-container">
+            <button type="button" class="tip-option">5%</button>
+            <button type="button" class="tip-option">10%</button>
+            <button type="button" class="tip-option">15%</button>
+            <button type="button" class="tip-option">25%</button>
+            <button type="button" class="tip-option">50%</button>
+            <button type="button" class="tip-option">Custom</button>
+          </div>
+        </div>
 
-  Tip Amount
-  / person
+          <label for="num-of-people">Number of People</label>
+          <h6 class="error-message" id="num-of-people-error-message">Can't be negative or zero</h6>
+          <input type="number" placeholder="0" min="0" id="num-of-people">
+          <img src="./images/icon-person.svg" alt="Person Icon">
+      </div>
 
-  Total
-  / person
+      <div class="reset-card card">
+        <div class="results">
+          <div class="result">
+            <h3>Tip Amount</h3>
+            <span>/ person</span>
+          </div>
+          <div class="result">
+            <h3>Total</h3>
+            <span>/ person</span>
+          </div>
+        </div>
+        <button type="button" class="reset-button">Reset</button>
+      </div>
+    </div>
+  </main>
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
